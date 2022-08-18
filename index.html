@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank || Deposite</title>
+</head>
+<body>
+    <div class="w-10/12 m-auto my-32">
+        <div>
+            <h1 class="text-center text-3xl font-bold p-2">Your Transaction💸</h1>
+        </div>
+        <section class="grid grid-cols-3 gap-4">
+            <div class="bg-red-500 border rounded">
+                <h1 class="text-center text-3xl font-bold p-2">Deposite</h1>
+                <h1 class="text-center text-5xl font-bold p-2">$<span id="Current-amount">00</span></h1>
+            </div>
+            <div class="bg-green-600 border rounded">
+                <h1 class="text-center text-3xl font-bold p-2">WithDraw</h1>
+                <h1 class="text-center text-5xl font-bold p-2">$<span id="withdraw-amount">00</span></h1>
+            </div>
+            <div class="bg-purple-500 border rounded">
+                <h1 class="text-center text-3xl font-bold p-2">Total Balance</h1>
+                <h1 class="text-center text-5xl font-bold p-2">$<span id = "total-amount">300</span></h1>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 gap-4 mt-14">
+            <div class="bg-red-500 border rounded">
+                <h1 class="text-center mt-8 mb-4 text-xl font-bold">Enter Your Deposite Amount:</h1>
+               <input id = "Deposite-Amount" class="text-sm text-gray-base 
+               mx-44 mb-4 py-5 px-4 h-2 border
+               border-gray-200 rounded" type="number">
+               <button id="deposite-btn" class="mx-56 mb-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Deposite
+              </button>
+            </div>
+            
+            <div class="bg-purple-500 border rounded">
+                <h1 class="text-center mt-8 mb-4 text-xl font-bold">Enter Your Withdraw Amount:</h1>
+                <input id = "Withdraw-Amount" class="text-sm text-gray-base 
+               mx-44 mb-4 py-5 px-4 h-2 border 
+               border-gray-200 rounded" type="number">
+               <button id ="withdraw-btn" class="mx-56 mb-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                WithDraw
+              </button>
+            </div>
+        </section>
+    </div>
+    <script src="function.js"></script>
+    <script src="deposite.js"> </script>
+</body>
+</html>
